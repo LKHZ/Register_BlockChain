@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Log IN</title>
+ </head>
+ <style>
+  /*헤더부분의 스타일을 정의*/
+	header {
+		background-color:black;
+		width: 100%;
+		height: 140px;
+		display:inline;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		text-align:center;
+		z-index: 100;
+		}
+	#headerImage1{
+		position: absolute;
+		left: 10%;
+		top: 30%;
+		margin: auto;
+	}
+
+	#headerImage2{
+		margin: 20px auto;
+	}
+  
+	#headerRight{
+		position: absolute;
+		right: 10%;
+		top: 70%;
+	}
+
+	/*table 스타일을 정의*/
+	td{
+		padding:10px;
+	}
+
+	/*구조부분의 스타일 정의*/
+	#middle{
+		margin: auto;
+		width: 40%;
+		position: relative;
+		top: 180px;
+		border:1px solid #f1f1f1;
+	}
+	#text{
+		margin: 20px;
+	}
+	span{
+		color: #3399ff;
+		font-size: 30px;
+	}
+
+ </style>
+ <body>
+  <div id="wrap">
+  <header id="header">
+		<a href="index.html"><img src="logo2.jpg" alt="로고" width=80px height=80px id="headerImage1"></a>
+		<a href="mainframe.html"><img src="logo1.jpg" alt="로고" width=300px height=100px id="headerImage2"></a>
+  </header>
+  <div id="middle">
+	  <div id="text">
+	  <form method="get" name="login">
+		  <h1>Member Login</h1>
+		  <b><span>Stark Company</span> 사이트에 방문해주셔서 감사합니다.</b><br>
+		  아이디와 비밀번호를 입력해주세요.
+	  </div>
+
+	  <div id="logarea">
+		  <table>
+			<tr>
+				<td rowspan="3"><img src="com.png"></td>
+				<td>ID</td>
+				<td><input type='text' size="29%" name="user"></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type='password' size="29%"></td>
+			</tr>  
+			
+			<tr>
+				<td colspan="2" id="td3"><input type='button' value='로그인' id="" onClick="location.href='mainframe.html?user=' + document.login.user.value">
+				<input type='reset' value='새로작성'></td>
+			</tr>
+			</table>
+	  </form>
+	  </div>
+  </div>
+  </div>
+ </body>
+</html>

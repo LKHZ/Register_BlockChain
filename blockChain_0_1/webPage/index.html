@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Stark Company</title>
+
+  <script language="JavaScript">
+
+	function subDisplay(sno) {
+	sm = eval("document.all.s" + sno);
+
+	a12 = eval("document.all.c1");
+	a12.style.display='none';
+
+	for(i=1;i<6;i++)
+	{
+		smf = eval("document.all.s" + i)
+		if(smf.style.display =='')
+		smf.style.display = 'none';
+	}
+	if (sm.style.display == 'none')
+		sm.style.display = '';
+	}
+
+  </script>
+
+  <style>
+    body{
+		font-family:'맑은고딕','Malgun Gothic','함초롱돋움','함초롱바탕','Hamchorong batang','돋움','Dotum','굴림','Gulim',Serif;
+	}
+  /*헤더부분의 스타일을 정의*/
+	header {
+		background-color:black;
+		width: 100%;
+		height: 140px;
+		display:inline;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		text-align:center;
+		z-index: 100;
+		}
+	#headerImage1{
+		position: absolute;
+		left: 10%;
+		top: 30%;
+		margin: auto;
+	}
+
+	#headerImage2{
+		margin: 20px auto;
+	}
+  
+	#headerRight{
+		position: absolute;
+		right: 10%;
+		top: 70%;
+	}
+	#loginPage, #memberJoinPage{
+		letter-spacing:3px;
+		font-size: 7px;
+	}
+	#loginPage:link{
+		text-decoration: none;
+		color: white;
+	}
+	#loginPage:visited{
+		text-decoration: none;
+		color: white;
+	}
+	#loginPage:hover{
+		text-decoration: underline;
+		color: white;
+	}
+	#memberJoinPage:link{
+		text-decoration: none;
+		color: white;
+	}
+	#memberJoinPage:visited{
+		text-decoration: none;
+		color: white;
+	}
+	#memberJoinPage:hover{
+		text-decoration: underline;
+		color: white;
+	}
+	
+	/*메인 메뉴부분의 스타일을 정의*/
+	nav{
+		display:inline;
+		position: fixed;
+		top: 140px;
+		z-index: 100;
+	}
+
+	#menu{
+		background-color:white;
+		left: 2%;
+		width: 10%;
+		height: 100%;
+		font-size: 18px;
+		border:1px solid #f1f1f1;
+		position: fixed;
+	}
+	
+	#menu div{
+		height: 50px;
+		padding-top: 20px;
+		padding-left: 10px;
+		border-bottom: 1px solid #f1f1f1;
+	}
+	#menu div:hover{
+		background-color: #00ccff;
+		color: white;
+	}
+	.mm{
+		cursor: hand;
+	}
+
+	/*서브 메뉴부분의 스타일을 정의*/
+	#sub{
+		width: 10%;
+		height: 100%;
+		left: 12.1%;
+	}
+	#sub .sm{
+		background-color:white;
+		padding-top:20px;
+		padding-left:10px;
+		font-size:13px;
+		height:30px;
+	}
+	#sub .sm:hover{
+		background-color:#e7e7e7;
+		color: black;
+	}
+	.submenu div{
+		border: 1px solid #f1f1f1;
+		z-index: 100;
+	}
+
+	/*하이퍼링크의 스타일을 정의*/
+	a:link{
+		text-decoration: none;
+		color: black;
+	}
+	a:visited{
+		text-decoration: none;
+		color: black;
+	}
+	a:hover{
+		text-decoration: none;
+		color: black;
+	}
+
+	/*iframe의 스타일을 정의*/
+	#content{
+		position: absolute;
+		left: 22.1%;
+		height: 75%;
+		width: 76%;
+		top: 140px;
+	}
+
+	iframe{
+		width:100%;
+		height: 100%;
+		border: none;
+	}
+	
+	#c1{
+		position: absolute;
+		left: 12.1%;
+		top:140px;
+		height: 100%;
+		width: 88%;
+	}
+  </style>
+ </head>
+ <body onload = "open1();">
+  <div id="wrap">
+  <!--헤더 영역-->
+	  <header id="header">
+		<a href="index.html"><img src="logo2.jpg" alt="로고" width=80px height=80px id="headerImage1"></a>
+		<a href="mainframe.html"><img src="logo1.jpg" alt="로고" width=300px height=100px id="headerImage2"></a>
+		<span id ="headerRight"><a href="logIn.html" id="loginPage" target="_blank" style=" width =400px height =400px top=100px left=100px">LOGIN</a>&nbsp;&nbsp;
+		<a href="memberJoin.html" id="memberJoinPage">MEMBER JOIN</a></span>
+	  </header>
+  <!--메뉴 영역-->
+	  <nav id="menu">
+		<a target="iframe" href=""><div class="mm" onClick="subDisplay(1)">소 개</div></a>
+		<a target="iframe" href=""><div class="mm" onClick="subDisplay(2)">알림</div></a>
+		<a target="iframe" href=""><div class="mm" onClick="subDisplay(3)" >업무소개</div></a>
+		<a target="iframe" href="news/video.html"><div class="mm" onClick="subDisplay(4)" >등기검색</div></a>
+		<a target="iframe" href=""><div class="mm" onClick="subDisplay(5)">고객센터</div></a>
+
+		<!--famliysite 넣기-->
+	  </nav>
+
+  <!--서브 메뉴 영역-->
+	  <nav id="sub">
+		<div class="submenu" id="s1" style="display: none">
+		<a href="intro/intro1.html" target="iframe"><div class="sm">회사 소개</div></a>
+		<a href="intro/intro2.html" target="iframe"><div class="sm">CEO 인사말</div></a>
+		<a href="intro/intro3.html" target="iframe"><div class="sm">찾아오시는 길</div></a>
+		</div>
+
+		<div class="submenu" id="s2" style="display: none">
+		<a href="humanResource/humanResource1.html" target="iframe"><div class="sm">인재상</div></a>
+		<a href="humanResource/humanResource2.html" target="iframe"><div class="sm">채용소식</div></a>
+		</div>
+
+		<div class="submenu" id="s3" style="display: none">
+		<a href="products/products1.html" target="iframe"><div class="sm">Suit</div></a>
+		<a href="products/products2.html" target="iframe"><div class="sm">Aircraft</div></a>
+		<a href="products/products3.html" target="iframe"><div class="sm">Electronic Warfare</div></a>
+		</div>
+
+		<div class="submenu" id="s4" style="display: none">
+		<a href="news/video.html" target="iframe"><div class="sm">최근기록</div></a>
+		</div>
+
+		<div class="submenu" id="s5" style="display: none">
+		<a href="customerService/customerService1.html" target="iframe"><div class="sm">Contact us</div></a>
+		<a href="customerService/review.html" target="iframe"><div class="sm">후기</div></a>
+		</div>
+	  </nav>
+  <!--내용 영역-->
+	  <div id="content">
+		<iframe name="iframe">이브라우저는 iframe을 지원하지 않습니다.</iframe>
+	  </div>
+  <!--메인 페이지 영역-->
+	  <iframe src="main.html" id="c1" style="display: visibility">이브라우저는 iframe을 지원하지 않습니다.</iframe>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,118 @@
+﻿<!doctype html>
+<html>
+	<head>
+
+	<link href="..\title.css" type="text/css" rel="stylesheet">
+		<style>
+		.lis{
+			
+		}
+		.lis div:hover{
+			background-color:gray;
+			color:white;
+		}
+		.content{
+			padding:50px;
+		}
+		.content p{
+			font-weight:bold;
+			font-size:20px;
+			color:blue;
+		}
+		.content div{
+			font-weight:bold;
+		}
+		.content table{
+			align:center;
+			border-collapse:collapse;
+			
+		}
+		.content table th{
+			background-color:#C4BFFF;
+		}
+		.content table, th, tr, td{
+			text-align:center;
+		}
+		/*제목 리스트*/
+		ul{
+			list-style:none;
+			text-align:center;
+		}
+		ul li{
+			display:inline;
+			padding:40px;
+		}
+		ul li a{
+			text-decoration:none;
+			color:black;
+		}
+	
+		
+		/*id*/
+		#opa{
+			opacity:0.5;
+		}
+		
+		
+		.remote{
+			right:10px;
+			position:fixed;
+			top:10px;
+		}
+		
+		</style>
+	</head>
+	<body>
+		<div class="remote">
+			<a href="#top"><img src="..\TOP.png"></a>
+		</div>
+		<a name="top"></a>
+		<br><br>
+		<div class="title">고객센터</div>
+		<p>
+			<div class="subt">문의사항이 있으신가요?</div>
+				<br>
+			<div align="center">
+				<img src="고객센터아이콘02.jpg"></img>
+			</div>
+		</p>
+		<hr id="opa">
+		<ul>
+			<div class="lis">
+				<li><a href="#qa">자주 묻는 질문</a></li>
+				<li><a href="#call">문의전화</a></li>
+				<li><a href="mailto:ksuk6603@nate.com">문의메일</a><li>
+			</div>
+		</ul>
+		<hr id="opa">
+		<div class="content">
+			<p><a name="qa">자주묻는질문</a></p>
+			<div>회원가입</div>
+			홈페이지 우측 상단에 JOIN US버튼을 눌러주세요.<br><br>
+			<div>상품구매</div>
+			홈페이지 좌측 메뉴에 판매상품 페이지로 들어가세요.<br><br>
+			<div>환불문의</div>
+			전화해주세요. 개봉시 환불 불가능합니다.<br><br>
+			<div>배송문의</div>
+			문의전화 주시면 확인가능합니다.<br><br>
+			<div>해외배송</div>
+			배송비<br>
+			<table border="1" cellpadding="10px">
+				<tr>
+					<th>소재</th><th>배송처리</th><th>배송기간</th><th>배송비</th>
+				</tr>
+				<tr>
+					<th>국내 소재</th><td>국내 배송</td><td>입금확인 후 약 한달정도 소요</td><td>국내운송료</td>
+				</tr>
+				<tr>
+					<th rowspan="2">해외 소재</th><td>해외 직배송</td><td>입금 확인 후 약 두달정도 소요</td><td>국제운송료</td>
+				</tr>
+				<tr>
+					<td>해외 통합배송</td><td>입금 확인 후 약 세달정도 소요</td><td>국제운송료</td>
+				</tr>
+			</table>
+			<p><a name="call">문의전화</a></p><br>
+			1588-1588<br>
+		</div>
+	</body>
+</html>

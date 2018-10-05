@@ -1,0 +1,19 @@
+	.title{
+		text-align:center;
+		font-size:25pt;
+		font-weight:bold;
+		font-family:'∏º¿∫∞ÌµÒ','Malgun Gothic','«‘√ ∑’µ∏øÚ','«‘√ ∑’πŸ≈¡','Hamchorong batang','µ∏øÚ','Dotum','±º∏≤','Gulim',Serif;
+	}
+	.subt{
+		text-align:center;
+		color:gray;
+		font-weight:bold;
+	}
+	body{
+		font-family:'∏º¿∫∞ÌµÒ','Malgun Gothic','«‘√ ∑’µ∏øÚ','«‘√ ∑’πŸ≈¡','Hamchorong batang','µ∏øÚ','Dotum','±º∏≤','Gulim',Serif;
+	}
+	.remote{
+		right:10px;
+		position:fixed;
+		top:10px;
+	}
